@@ -1,0 +1,10 @@
+{% extends 'nav.html' %} {% block content %}
+
+    <form action="/update" method="POST">
+        <input type="text" class="d-none" name="id" value="{{data.id}}"><br>
+        <input type="text" name="user" value="{{data.user}}"><br><br>
+        <input type="text" name="comments" value="{{data.comments}}"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+{% endblock %} 

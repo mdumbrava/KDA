@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/kdaicon.jpg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/kdastyle.css">  
+    
+</head>
+<body> 
+    <div class= "d-flex justify-content-between" style="position: fixed;top: 0;width: 100%; 
+    background-color: black; opacity: 0.5; text-shadow: 1px 1px purple;">
+      <div> <h1 ><a style="text-align:center; color:aliceblue ; font-family: 'Courier New' ;" href="/">Home</a>
+        &nbsp; &nbsp; &nbsp; &nbsp; 
+         </h1>
+      </div>
+
+        <div>
+          <h1 style="text-align:center; color:aliceblue ; font-family: 'Courier New' ;">{{ value }}</h1>
+        </div>    
+        
+        <div class="mr-2">
+          <h1 style="text-align:center; color:aliceblue ; font-family: 'Courier New' ;">  <b><a href="/Auth/myaccount">{{ user }} </a></b>
+            {% if user == "Guest" %}
+            <a style="text-align:center; color:aliceblue ; font-family: 'Courier New' ;" href="/Auth">Login</a>
+            {% else %}
+            <a style="text-align:center; color:aliceblue ; font-family: 'Courier New' ;" href="/Auth/logout">Logout</a>
+            {% endif %}
+        </h1>
+        </div>
+    </div>
+
+<br><br><br>
+
+    {% block content %}
+
+    {% endblock %}
+
+        
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>    
+
+</body>
+</html>

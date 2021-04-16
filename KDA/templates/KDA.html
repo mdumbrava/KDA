@@ -1,0 +1,205 @@
+
+{% extends 'nav.html' %} {% block content %}
+
+    <div class="d-flex justify-content-center">
+        
+        <div>
+            <h1 class="text-center text-light" style="font-family: 'Courier New'"> AHRI</h1>
+            <a href="/Ahri">
+            <img src="/static/icon_ahri.jpg" alt="Ahri Icon" style="width: 250px;height: 250px ; padding: 25px;" >
+            </a>
+        </div>
+        <div>
+            <h1 class="text-center text-light" style="font-family: 'Courier New'">AKALI</h1>
+            <a href="/Akali">
+            <img src="/static/icon_akali.jpg" alt="Ahri Icon" style="width: 250px;height: 250px ; padding: 25px;">
+            </a>
+        </div>
+        <div>
+            <h1 class="text-center text-light" style="font-family: 'Courier New'">EVELYNN</h1>
+            <a href="/Evelyn">
+            <img src="/static/icon_evelyn.jpg" alt="Ahri Icon" style="width: 250px;height: 250px ; padding: 25px;">
+            </a>
+        </div>
+        <div>
+            <h1 class="text-center text-light" style="font-family: 'Courier New'">KAI'SA</h1>
+            <a href="/Kaisa">
+            <img src="/static/icon_kaisa.jpg" alt="Ahri Icon" style="width: 250px;height: 250px ; padding: 25px;">
+            </a>
+        </div>
+        <div>
+            <h1 class="text-center text-light" style="font-family: 'Courier New'">SERAPHINE</h1>
+            <a href="/Seraphine">
+            <img src="/static/icon_s.jpg" alt="Ahri Icon" style="width: 250px;height: 250px ; padding: 25px;">
+            </a>
+        </div>
+        
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div>
+    <h1 style="text-align:center; color:aliceblue ; font-family: 'Courier New';"><b>WHO IS KDA?</b></h1>
+        <p class="text-light " style="font-family: 'Courier New'; margin-left: 100px; margin-right: 100px; text-align:center; 
+        text-shadow: 1px 1px purple; ">
+            K/DA is a virtual K-pop 
+            inspired girl group consisting of four
+            themed versions of League of Legends characters:
+            Ahri, Akali, Evelynn and Kai'Sa. American singers Madison Beer and
+            Jaira Burns and (G)I-dle members Miyeon and Soyeon provide the voices of Evelynn,
+            Kai'Sa, Ahri, and Akali respectively, though the characters have also been voiced
+            by other artists. K/DA was developed by Riot Games, the company behind League of Legends, 
+            and unveiled at the 2018 League of Legends World Championship with an augmented reality 
+            live performance of their first song, "Pop/Stars". A music video of the song uploaded to 
+            YouTube subsequently went viral, surpassing 100 million views in one month, and 
+            reaching 400 million views, as well as topping Billboard's World Digital Song Sales chart. 
+            This would be followed up with the release of an EP in 2020, entitled "K/DA: ALL OUT"
+            and featured 5 new songs, most notably the title track "More" as it received a music video 
+            which has 71 million views as of February 2021.
+
+
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align:center; ">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/3VTkBuxU4yk" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+       
+    </div>
+
+    <h2 style="text-align:center ; color:aliceblue ; text-shadow: 1px 1px purple;"><b>Slideshow Gallery</b></h2>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img src="/static/kda3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img src="/static/kda5.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img src="/static/kda4.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img src="/static/kda2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img src="/static/kda1.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img src="/static/kda7.jpg" style="width:100%">
+
+      </div>
+       <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img src="/static/kda6.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="/static/kda3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kai'sa teaching the girls the dances">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/static/kda5.jpg" style="width:100%" onclick="currentSlide(2)" alt="KDA taking a much needed break">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/static/kda4.jpg" style="width:100%" onclick="currentSlide(3)" alt="KDA arriving at Shanhai Airport">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/static/kda2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Out on the town of Shanhai">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/static/kda1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Promotional work in magazines">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="/static/kda7.jpg" style="width:100%" onclick="currentSlide(6)" alt="Backstage at Worlds 2020 getting ready to perfom More">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/static/kda6.jpg" style="width:100%" onclick="currentSlide(7)" alt="Moment before going on stage">
+        </div>
+      </div>
+    </div>
+<br>
+{% if user == "Guest" %}
+<div style="text-shadow:1px 1px purple; color:aliceblue; text-align:center;">
+  <h4>If you want to leave a comment please sign in or register</h4> <br>
+  <a  href="Auth" type="button" class="btn btn-outline-secondary">Login/Register</a>
+</div>
+{% endif %}
+<br><br>
+<div style="text-align:center; color:aliceblue; border-style: solid; width: 900px; " class=" mx-auto">
+  {% if user != "Guest" %}
+  <form action="/add" method="POST">
+    <!-- <label for="fname">User:</label><br> -->
+    <!-- <input type="text" name="user" value=""><br> -->
+    <label for="lname">Comment:</label><br>
+    <textarea rows="3" cols="50" name="comments" value=""></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  {% endif %}
+<br><br>
+  comments per page:{{size}}
+  <br><br>
+  <div class= "mx-auto container">
+
+    Page: {{ data.page }} <br>
+    {% for page in data.iter_pages() %}
+    {% if page %}
+        <a href="/{{ page }}"> {{ page }} </a>
+    {% else %}
+        ...
+    {% endif %}
+    
+    {% endfor %}
+
+    {% for x in data.items %}
+      <div style="border-style: solid; width: 865px; text-align:left; padding: 25px; text-shadow: 1px 1px purple; color:aliceblue; 
+      background-color: black; opacity: 0.7; font-size: 20px;" >
+      <br>
+      <b>{{ x.user }}</b> &nbsp;{{ x.time }}
+      <br>
+      <br>
+      <pre style= "text-shadow: 1px 1px purple; color:aliceblue; ">{{ x.comments }} </pre>
+      <br>
+      {% if user == "miha" %}
+      <a href="/form/{{x.id}}"> <b>Edit Comment</b> </a> <br>
+      <a href="/delete/{{x.id}}"> <b>Delete Comment</b> </a>
+      {% endif %}
+      </div>
+      <br><br>
+      
+    {% endfor %}
+  </div> 
+</div>
+
+ <br><br>  
+
+ {% endblock %} 

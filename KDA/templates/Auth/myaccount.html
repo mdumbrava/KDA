@@ -1,0 +1,20 @@
+{% extends 'nav.html' %} {% block content %}
+
+<div style="border-style: solid; width: 865px; padding: 25px; text-shadow: 1px 1px purple; color:aliceblue; 
+      background-color: black; opacity: 0.7; font-size: 20px;" class="mx-auto">
+    <div class="mx-auto" style="width:280px; text-align:center;">
+    
+    <br>
+
+    <form action="/Auth/changepass" method="POST">
+        <label for="password">Old Password:</label><br>
+        <input type="password" name="oldpassword" value=""><br><br>
+        <label for="password">New Password:</label><br>
+        <input type="password" name="newpassword" value=""><br><br>
+        <label for="password">Re-Enter New Password:</label><br>
+        <input type="password" name="newpassword1" value=""><br><br>
+        <input type="submit" value="Change Password">
+    </form>
+    </div>
+</div>
+{% endblock %} 
