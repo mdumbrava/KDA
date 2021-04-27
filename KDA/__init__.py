@@ -1,15 +1,15 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
+from config import KEY, SQL
 
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
 
-    app.config['SECRET_KEY'] = 'ABCDEFGHIJKLMNOPR'
+    app.config['SECRET_KEY'] = KEY
 
-    sql_cfg = 'mysql+pymysql://root:123456@' + '127.0.0.1' + ':3306/db_kda'
-    app.config['SQLALCHEMY_DATABASE_URI'] = sql_cfg
+    app.config['SQLALCHEMY_DATABASE_URI'] = SQL
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy(app)
     db.init_app(app)
