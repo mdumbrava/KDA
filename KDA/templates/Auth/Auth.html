@@ -1,8 +1,15 @@
 {% extends 'nav.html' %} {% block content %}
 
+
+
 <div style="border-style: solid; width: 865px; padding: 25px; text-shadow: 1px 1px purple; color:aliceblue; 
       background-color: black; opacity: 0.7; font-size: 20px;" class="mx-auto">
     <div class="mx-auto" style="width:280px; text-align:center;">
+<br>
+<p>Existing user please log in below</p>
+<br>
+<h1><b>LOGIN</b></h1>
+<br>
     <form action="/Auth/login" method="POST">
         <label for="name">User:</label><br>
         <input type="text" name="user" value=""><br><br>
@@ -10,7 +17,11 @@
         <input type="password" name="password" value=""><br><br>
         <input type="submit" value="Login">
     </form>
-    <br><br><br><br><br>
+    <br><br><br>
+<p>If you are a new user please register below</p>
+<br>
+<h1><b>REGISTER</b></h1>
+<br>
 
     <form action="/Auth/register" method="POST">
         <label for="name">User:</label><br>
